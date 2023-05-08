@@ -1,0 +1,41 @@
+.menu li a {
+    color: #3CC793;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: #2d755a;
+}
+
+.router-link-exact-active{
+    color: white !important;
+    background: #15583f;
+}
+
+/*Transiciones*/
+.fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    transition: opacity 0.2s ease;
+  
+  }
+  
+  .fade-leave-active {
+    transition: opacity 0.2s ease;
+    opacity: 0;
+  }
+
+/* Ocultado de flechitas en inputs de tipo number para mejor UI */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    appearance:textfield !important; /* Firefox */
+}
